@@ -1,0 +1,48 @@
+---
+layout: default
+title: NuGet Script Generator
+---
+<h1>NuGet Script Generator</h1>
+
+<p>Select the options for your application and we'll generate a script for you that will import the necessary Autofac packages using the Package Manager Console in Visual Studio.</p>
+
+<form id="script_options">
+	<fieldset>
+		<legend>Step 1: Select Application Type(s)</legend>
+		<p>Autofac core components are always included, but if your application is one (or more) of the following, select those which apply:</p>
+		<div id="application_type" class="controls">
+			<label class="checkbox"><input type="checkbox" value="webforms" /> ASP.NET Web Forms</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> ASP.NET MVC</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> ASP.NET WebAPI</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> SignalR</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> WCF Services</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> RIA Services (DomainService)</label>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Step 2: Additional Library Integration</legend>
+		<p>Select the appropriate options if you're using any of these libraries and want Autofac to integrate with them:</p>
+		<div id="library_integration" class="controls">
+			<label class="checkbox"><input type="checkbox" value="webforms" /> MEF</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> Microsoft Common Service Locator</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> Microsoft Enterprise Library</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> Castle DynamicProxy</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> NHibernate</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> Moq</label>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Step 3: Select Additional Features</legend>
+		<p>If you'd like any of these additional features in your application, select those that apply:</p>
+		<div id="application_type" class="controls">
+			<label class="checkbox"><input type="checkbox" value="webforms" /> Aggregate Service Support</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> Metadata Attribute Support</label>
+			<label class="checkbox"><input type="checkbox" value="webforms" /> Multitenant Application Support</label>
+		</div>
+	</fieldset>
+</form>
+
+<h2>Use This Script</h2>
+<textarea id="script_output" class="uneditable-input" readonly="true">
+	Script goes here.
+</textarea>
