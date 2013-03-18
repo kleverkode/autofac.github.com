@@ -11,3 +11,7 @@ To run locally (Windows):
   1. Change to the local repo directory with the site.
   1. Run `jekyll --serve`
   1. In a browser, visit [http://localhost:4000](http://localhost:4000)
+
+Jekyll resources:
+  * [Jekyll Documentation](https://github.com/mojombo/jekyll/wiki)
+  * [Learning Jekyll by Example](http://www.andrewmunsell.com/tutorials/jekyll-by-example/)
