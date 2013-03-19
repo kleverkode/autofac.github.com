@@ -1,6 +1,7 @@
 ---
 layout: default
 title: NuGet Script Generator
+scripts: ['/js/scriptgen.js']
 ---
 <h1>NuGet Script Generator</h1>
 
@@ -11,38 +12,52 @@ title: NuGet Script Generator
 		<legend>Step 1: Select Application Type(s)</legend>
 		<p>Autofac core components are always included, but if your application is one (or more) of the following, select those which apply:</p>
 		<div id="application_type" class="controls">
-			<label class="checkbox"><input type="checkbox" value="webforms" /> ASP.NET Web Forms</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> ASP.NET MVC</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> ASP.NET WebAPI</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> SignalR</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> WCF Services</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> RIA Services (DomainService)</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Web" /> ASP.NET Web Forms</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Mvc4" /> ASP.NET MVC</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.WebApi" /> ASP.NET WebAPI</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.SignalR" /> SignalR</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Wcf" /> WCF Services</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.DomainServices" /> RIA Services (DomainService)</label>
 		</div>
 	</fieldset>
 	<fieldset>
 		<legend>Step 2: Additional Library Integration</legend>
 		<p>Select the appropriate options if you're using any of these libraries and want Autofac to integrate with them:</p>
 		<div id="library_integration" class="controls">
-			<label class="checkbox"><input type="checkbox" value="webforms" /> MEF</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> Microsoft Common Service Locator</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> Microsoft Enterprise Library</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> Castle DynamicProxy</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> NHibernate</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> Moq</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Mef" /> MEF</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.CommonServiceLocator" /> Microsoft Common Service Locator</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.EnterpriseLibraryConfigurator" /> Microsoft Enterprise Library</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.DynamicProxy2" /> Castle DynamicProxy</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.NHibernate" /> NHibernate</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.Moq" /> Moq</label>
 		</div>
 	</fieldset>
 	<fieldset>
 		<legend>Step 3: Select Additional Features</legend>
 		<p>If you'd like any of these additional features in your application, select those that apply:</p>
-		<div id="application_type" class="controls">
-			<label class="checkbox"><input type="checkbox" value="webforms" /> Aggregate Service Support</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> Metadata Attribute Support</label>
-			<label class="checkbox"><input type="checkbox" value="webforms" /> Multitenant Application Support</label>
+		<div id="additional_features" class="controls">
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.AggregateService" /> Aggregate Service Support</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.Attributed" /> Metadata Attribute Support</label>
+			<label class="checkbox"><input type="checkbox" value="Autofac.Extras.Multitenant" /> Multitenant Application Support</label>
 		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Step 4: Enter Optional Parameters</legend>
+		<label class="checkbox"><input type="checkbox" id="include_prerelease" value="true" /> Enable prerelease versions <span class="icon-question-sign" data-toggle="popover" data-trigger="hover" title="If you want to install the very latest packages, even if they're in pre-release mode, check this box."></span></label>
+		<label>Project name you're installing to: <span class="icon-question-sign" data-toggle="popover" data-trigger="hover" title="If you know the name of the project you'll be using the script on (e.g., &quot;ConsoleApplication1&quot;), enter it here. Otherwise you'll need to select the project manually in Visual Studio."></span></label>
+		<input type="text" id="project_name" placeholder="ConsoleApplication1" />
 	</fieldset>
 </form>
 
 <h2>Use This Script</h2>
+<p>Copy/paste the following into the Package Manager Console to install Autofac into your project.</p>
 <textarea id="script_output" class="uneditable-input" readonly="true">
 	Script goes here.
 </textarea>
+
+<h2>Detailed Script Usage Instructions</h2>
+<ol>
+	<li>In Visual Studio, go to <strong>Tools -&gt; Library Package Manager -&gt; Package Manager Console</strong>.</li>
+	<li>In the "Default Project" list in Package Manager Console, select the project into which you want Autofac installed. (If you entered your project name in the "optional parameters" section, above, you can skip this step.)</li>
+	<li>Paste the script into the Package Manager Console window at the <code>PM&gt;</code> prompt and hit Enter to run it.</li>
+</ol>
