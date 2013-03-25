@@ -39,7 +39,7 @@ title: Home
     <div class="span4">
         <h2>Learn</h2>
         <p>If you're new to Autofac, <a href="https://code.google.com/p/autofac/wiki/GettingStarted">the Quick Start guide</a> is a good place to start learning about how to use Autofac.</p>
-        <p>For more detailed information, <a href="https://code.google.com/p/autofac/w/list">check out the Autofac wiki</a>, where Autofac features and examples are shown more in depth.</p>
+        <p>For more detailed information, <a href="https://code.google.com/p/autofac/w/list">check out the Autofac wiki</a>, where Autofac features and examples are shown more in depth, or jump to <a href="/apidoc/">the API documentation</a>.</p>
         <p>And if you have a question? Hit us up on <a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a>.</p>
         <p><a class="btn" href="https://code.google.com/p/autofac/wiki/GettingStarted">Quick Start &raquo;</a></p>
    </div>

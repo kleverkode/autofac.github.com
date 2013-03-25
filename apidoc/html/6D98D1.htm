@@ -1,0 +1,90 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>AutofacParameterBuilderVisitor Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="AutofacParameterBuilderVisitor class" /><meta name="System.Keywords" content="Autofac.Extras.EnterpriseLibraryConfigurator.AutofacParameterBuilderVisitor class" /><meta name="System.Keywords" content="AutofacParameterBuilderVisitor class, about AutofacParameterBuilderVisitor class" /><meta name="Microsoft.Help.F1" content="Autofac.Extras.EnterpriseLibraryConfigurator.AutofacParameterBuilderVisitor" /><meta name="Microsoft.Help.Id" content="T:Autofac.Extras.EnterpriseLibraryConfigurator.AutofacParameterBuilderVisitor" /><meta name="Description" content="Visitor for resolving object construction parameters from registrations during container configuration." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="Autofac.Extras.EnterpriseLibraryConfigurator" /><meta name="file" content="6D98D1" /><meta name="guid" content="6D98D1" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">AutofacParameterBuilderVisitor Class</td><td class="OH_tdRunningTitleColumn">Autofac .NET Inversion of Control Container</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="summary">
+            Visitor for resolving object construction parameters from
+            <span class="nolink">ParameterValue</span>
+            registrations during container configuration.
+            </div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Inheritance Hierarchy</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBHNAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBHNAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br />  <span class="nolink">ParameterValueVisitor</span><br />    <span class="selflink">Autofac.Extras.EnterpriseLibraryConfigurator<span id="ID0EBBNAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBBNAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>AutofacParameterBuilderVisitor</span><br /><p></p><b>Namespace:</b> <a href="CF6E8CF.htm" target="">Autofac.Extras.EnterpriseLibraryConfigurator</a><br /><b>Assembly:</b> <span sdata="assembly">Autofac.Extras.EnterpriseLibraryConfigurator</span> (in Autofac.Extras.EnterpriseLibraryConfigurator.dll) Version: 3.0.0.0 (3.0.0.0)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div id="snippetGroup_Syntax" class="code"><div id="ID0EBADAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EBADAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeftActive" id="ID0EBADAAAAA_tabimgleft"></div><div id="ID0EBADAAAAA_tab1" class="OH_CodeSnippetContainerTabActive" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EBADAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EBADAAAAA_tab2" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>VB</a></div><div id="ID0EBADAAAAA_tab3" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>C++</a></div><div id="ID0EBADAAAAA_tab4" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EBADAAAAA_tabimgright"></div></div><div id="ID0EBADAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EBADAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBADAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBADAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBADAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBADAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBADAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBADAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">AutofacParameterBuilderVisitor</span> : <span class="nolink">ParameterValueVisitor</span></pre></div><div id="ID0EBADAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public class AutofacParameterBuilderVisitor : ParameterValueVisitor</pre></div><div id="ID0EBADAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBADAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBADAAAAA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBADAAAAA_code_Plain_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBADAAAAA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBADAAAAA_code_Plain_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBADAAAAA');</script><div id="ID0EAADAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EAADAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeft" id="ID0EAADAAAAA_tabimgleft"></div><div id="ID0EAADAAAAA_tab1" class="OH_CodeSnippetContainerTabSolo" EnableCopyCode="true"><a xmlns="">JavaScript</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EAADAAAAA_tabimgright"></div></div><div id="ID0EAADAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EAADAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAADAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAADAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAADAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAADAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAADAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAADAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="identifier">Autofac.Extras.EnterpriseLibraryConfigurator.AutofacParameterBuilderVisitor</span> = <span class="keyword">function</span>();
+
+<span class="identifier">Type</span>.createClass(
+	'Autofac.Extras.EnterpriseLibraryConfigurator.AutofacParameterBuilderVisitor',
+	<span class="nolink">Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.ParameterValueVisitor</span>);</pre></div><div id="ID0EAADAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>Autofac.Extras.EnterpriseLibraryConfigurator.AutofacParameterBuilderVisitor = function();
+
+Type.createClass(
+	'Autofac.Extras.EnterpriseLibraryConfigurator.AutofacParameterBuilderVisitor',
+	Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.ParameterValueVisitor);</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EAADAAAAA');</script></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Remarks</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><p>
+            When registering a dependency from Enterprise Library, you get an instance
+            of <span class="nolink">TypeRegistration</span>.
+            To construct an instance of the type described by the registration,
+            you need to add the registration to your <a href="717248.htm" target="">ContainerBuilder</a>
+            with a corresponding set of <a href="EAB394AA.htm" target="">Parameter</a>
+            values.
+            </p><p>
+            To convert the constructor parameters from Enterprise Library format
+            to Autofac format, you need to look at each of the
+            <span class="nolink">ConstructorParameters</span>
+            and create a corresponding <a href="EAB394AA.htm" target="">Parameter</a> that
+            can be added to the dependency registration in the Autofac container.
+            </p><p>
+            This class takes advantage of the
+            <span class="nolink">Visit(ParameterValue)</span>
+            method to determine the type of the parameter and creates a corresponding
+            <a href="B7BB4DA4.htm" target="">ResolvedParameter</a> with the appropriate value.
+            </p><div class="tableSection"><table><tr><th>Parameter Type</th><th>Resolved Parameter Value</th></tr><tr><td><span class="nolink">ConstantParameterValue</span></td><td>
+            The exact provided constant value.
+            (<a href="46660002.htm" target="">VisitConstantParameterValue(ConstantParameterValue)</a>)
+            </td></tr><tr><td><span class="nolink">ContainerResolvedEnumerableParameter</span></td><td>
+            A lambda that builds a generic list of the specified type containing
+            the set of resolved named service instances.
+            (<a href="7B9CDAF2.htm" target="">VisitEnumerableParameterValue(ContainerResolvedEnumerableParameter)</a>)
+            </td></tr><tr><td><span class="nolink">ContainerResolvedParameter</span></td><td>
+            If the parameter is a named parameter, the named service is resolved;
+            otherwise the typed service is resolved.
+            (<a href="39EA8F6.htm" target="">VisitResolvedParameterValue(ContainerResolvedParameter)</a>)
+            </td></tr></table></div><p>
+            After calling the
+            <span class="nolink">Visit(ParameterValue)</span>
+            method on this visitor, the <a href="E07CD5C0.htm" target="">AutofacParameter</a>
+            property will be set with the output of the transformation. You can use
+            this in conjunction with <a href="266DA7E1.htm" target="">WithParameters<span id="ID0ELBCCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ELBCCAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TLimit, TReflectionActivatorData, TStyle<span id="ID0EJBCCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EJBCCAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script>(IRegistrationBuilder<span id="ID0EHBCCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EHBCCAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TLimit, TReflectionActivatorData, TStyle<span id="ID0EFBCCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFBCCAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script>, IEnumerable<span id="ID0EDBCCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDBCCAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>Parameter<span id="ID0EBBCCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBBCCAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script>)</a>
+            to add the parameters to the component registration.
+            </p><p>
+            Normally this class will not be used by itself. Instead, consider using
+            it in conjunction with the <a href="855BF571.htm" target="">AutofacContainerConfigurator</a>
+            and the Enterprise Library registration extension methods in
+            <a href="B8285921.htm" target="">EnterpriseLibraryRegistrationExtensions</a>.
+            </p><p>
+            For more information on how type registrations are created and the possible
+            values of constant and resolved parameters, see
+            <span class="nolink">TypeRegistration</span>,
+            which is the entry point for creating parameter values, and
+            <span class="nolink">Container</span>,
+            which is the placeholder class used by the registration mechanism for
+            signifying that a parameter value is resolved rather than constant.
+            </p><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div class="seeAlsoStyle"><a href="AA3161F7.htm" target="">AutofacParameterBuilderVisitor Members</a></div><div class="seeAlsoStyle"><a href="CF6E8CF.htm" target="">Autofac.Extras.EnterpriseLibraryConfigurator Namespace</a></div><div class="seeAlsoStyle"><a href="B8285921.htm" target="">Autofac.Extras.EnterpriseLibraryConfigurator<span id="ID0EBABAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABAAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>EnterpriseLibraryRegistrationExtensions</a></div><div class="seeAlsoStyle"><a href="855BF571.htm" target="">Autofac.Extras.EnterpriseLibraryConfigurator<span id="ID0EBAAAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBAAAAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>AutofacContainerConfigurator</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://autofac.org" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright (c) 2007-2013 Autofac Contributors (http://autofac.org)</a></p><div class="OH_feedbacklink"><a href="mailto:autofac@googlegroups.com?subject=Autofac+.NET+Inversion+of+Control+Container+AutofacParameterBuilderVisitor+Class+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to autofac@googlegroups.com.</div></div></body></html>

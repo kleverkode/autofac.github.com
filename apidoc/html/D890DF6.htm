@@ -1,0 +1,100 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Autofac.Core Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Autofac.Core namespace" /><meta name="Microsoft.Help.F1" content="Autofac.Core" /><meta name="Microsoft.Help.Id" content="N:Autofac.Core" /><meta name="Description" content=" " /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="Autofac.Core" /><meta name="file" content="D890DF6" /><meta name="guid" content="D890DF6" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">Autofac.Core Namespace</td><td class="OH_tdRunningTitleColumn">Autofac .NET Inversion of Control Container</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="summary"> </div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="31BF8346.htm" target="">ActivatedEventArgs<span id="ID0ECABOACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABOACAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>T<span id="ID0EAABOACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABOACAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Fired when the activation process for a new instance is complete.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="A6D0F298.htm" target="">ActivatingEventArgs<span id="ID0ECABNACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABNACAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>T<span id="ID0EAABNACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABNACAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Fired after the construction of an instance but before that instance
+            is shared with any other or any members are invoked on it.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="5F4A8ACE.htm" target="">ComponentRegisteredEventArgs</a></td><td><div class="summary">
+            Information about the ocurrence of a component being registered
+            with a container.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="A4EECF48.htm" target="">ConstantParameter</a></td><td><div class="summary">
+            Base class for parameters that provide a constant value.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="4C556D2D.htm" target="">Container</a></td><td><div class="summary">
+            Standard container implementation.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="770E317D.htm" target="">DependencyResolutionException</a></td><td><div class="summary">
+            Base exception type thrown whenever the dependency resolution process fails. This is a fatal
+            exception, as Autofac is unable to 'roll back' changes to components that may have already
+            been made during the operation. For example, 'on activated' handlers may have already been
+            fired, or 'single instance' components partially constructed.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="80FEAD4C.htm" target="">KeyedService</a></td><td><div class="summary">
+            Identifies a service using a key in addition to its type.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="E9AF5055.htm" target="">NamedPropertyParameter</a></td><td><div class="summary">
+            A property identified by name. When applied to a reflection-based
+            component, the name will be matched against property names.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="EAB394AA.htm" target="">Parameter</a></td><td><div class="summary">
+            Used in order to provide a value to a constructor parameter or property on an instance
+            being created by the container.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="D75C36BD.htm" target="">PreparingEventArgs</a></td><td><div class="summary">
+            Fired before the activation process to allow parameters to be changed or an alternative
+            instance to be provided.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="CE09A94C.htm" target="">RegistrationSourceAddedEventArgs</a></td><td><div class="summary">
+            Fired when an <a href="6F26F083.htm" target="">IRegistrationSource</a> is added to the registry.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="B7BB4DA4.htm" target="">ResolvedParameter</a></td><td><div class="summary">
+            Flexible parameter type allows arbitrary values to be retrieved
+            from the resolution context.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="898E02E6.htm" target="">Service</a></td><td><div class="summary">
+            Services are the lookup keys used to locate component instances.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="BDD78F1A.htm" target="">TypedService</a></td><td><div class="summary">
+            Identifies a service according to a type to which it can be assigned.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="61A724DC.htm" target="">UniqueService</a></td><td><div class="summary">
+            A handy unique service identifier type - all instances will be regarded as unequal.
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="F9693A2F.htm" target="">IActivatedEventArgs<span id="ID0ECABKABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABKABAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>T<span id="ID0EAABKABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABKABAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Fired when the activation process for a new instance is complete.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="1986A28A.htm" target="">IActivatingEventArgs<span id="ID0ECABJABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABJABAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>T<span id="ID0EAABJABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABJABAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Fired after the construction of an instance but before that instance
+            is shared with any other or any members are invoked on it.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="47D126E8.htm" target="">IComponentLifetime</a></td><td><div class="summary">
+            Locates the lifetime to which instances of a component should be attached.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="39C18106.htm" target="">IComponentRegistration</a></td><td><div class="summary">
+            Describes a logical component within the container.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="D91152CD.htm" target="">IComponentRegistry</a></td><td><div class="summary">
+            Provides component registrations according to the services they provide.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="A20FE18D.htm" target="">IDisposer</a></td><td><div class="summary">
+            Provided on an object that will dispose of other objects when it is
+            itself disposed.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="61A04F88.htm" target="">IInstanceActivator</a></td><td><div class="summary">
+            Activates component instances.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="11C538A3.htm" target="">IModule</a></td><td><div class="summary">
+            Represents a set of components and related functionality
+            packaged together.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="6F26F083.htm" target="">IRegistrationSource</a></td><td><div class="summary">
+            Allows registrations to be made on-the-fly when unregistered
+            services are requested (lazy registrations.)
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="7ADF3440.htm" target="">IServiceWithType</a></td><td><div class="summary">
+            Interface supported by services that carry type information.
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="23D330AF.htm" target="">ISharingLifetimeScope</a></td><td><div class="summary">
+            Defines a nested structure of lifetimes.
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Enumeration</th><th class="ps_descriptionColumn">Description</th></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="3260C08F.htm" target="">InstanceOwnership</a></td><td><div class="summary">
+            Determines when instances supporting IDisposable are disposed.
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="53A4E487.htm" target="">InstanceSharing</a></td><td><div class="summary">
+            Determines whether instances are shared within a lifetime scope.
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://autofac.org" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright (c) 2007-2013 Autofac Contributors (http://autofac.org)</a></p><div class="OH_feedbacklink"><a href="mailto:autofac@googlegroups.com?subject=Autofac+.NET+Inversion+of+Control+Container+Autofac.Core+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to autofac@googlegroups.com.</div></div></body></html>

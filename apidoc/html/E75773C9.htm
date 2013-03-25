@@ -1,0 +1,243 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>TenantPropagationBehavior(TTenantId) Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="TenantPropagationBehavior%3CTTenantId%3E class" /><meta name="System.Keywords" content="Autofac.Extras.Multitenant.Wcf.TenantPropagationBehavior%3CTTenantId%3E class" /><meta name="System.Keywords" content="TenantPropagationBehavior%3CTTenantId%3E class, about TenantPropagationBehavior%3CTTenantId%3E class" /><meta name="System.Keywords" content="TenantPropagationBehavior(Of TTenantId) class" /><meta name="System.Keywords" content="Autofac.Extras.Multitenant.Wcf.TenantPropagationBehavior(Of TTenantId) class" /><meta name="System.Keywords" content="TenantPropagationBehavior(Of TTenantId) class, about TenantPropagationBehavior(Of TTenantId) class" /><meta name="Microsoft.Help.F1" content="Autofac.Extras.Multitenant.Wcf.TenantPropagationBehavior`1" /><meta name="Microsoft.Help.Id" content="T:Autofac.Extras.Multitenant.Wcf.TenantPropagationBehavior`1" /><meta name="Description" content="Behavior for WCF clients and service hosts that is used to propagate tenant ID from client to service." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="Autofac.Extras.Multitenant.Wcf" /><meta name="file" content="E75773C9" /><meta name="guid" content="E75773C9" /><link type="text/css" rel="stylesheet" href="./../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"><!----></script><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">TenantPropagationBehavior<span id="ID0EDBABAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDBABAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script><span class="typeparameter">TTenantId</span><span id="ID0EBBABAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBBABAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script> Class</td><td class="OH_tdRunningTitleColumn">Autofac .NET Inversion of Control Container</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="summary">
+            Behavior for WCF clients and service hosts that is used to propagate
+            tenant ID from client to service.
+            </div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Inheritance Hierarchy</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBEOAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBEOAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br />  <span class="selflink">Autofac.Extras.Multitenant.Wcf<span id="ID0EEBOAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EEBOAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>TenantPropagationBehavior<span id="ID0ECBOAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECBOAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TTenantId<span id="ID0EABOAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EABOAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></span><br /><p></p><b>Namespace:</b> <a href="EE9DF8AF.htm" target="">Autofac.Extras.Multitenant.Wcf</a><br /><b>Assembly:</b> <span sdata="assembly">Autofac.Extras.Multitenant</span> (in Autofac.Extras.Multitenant.dll) Version: 3.0.0.0 (3.0.1.0)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div id="snippetGroup_Syntax" class="code"><div id="ID0EBBEAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EBBEAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeftActive" id="ID0EBBEAAAAA_tabimgleft"></div><div id="ID0EBBEAAAAA_tab1" class="OH_CodeSnippetContainerTabActive" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EBBEAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EBBEAAAAA_tab2" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>VB</a></div><div id="ID0EBBEAAAAA_tab3" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>C++</a></div><div id="ID0EBBEAAAAA_tab4" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EBBEAAAAA_tabimgright"></div></div><div id="ID0EBBEAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EBBEAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBBEAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBBEAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBBEAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBBEAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBBEAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBBEAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">TenantPropagationBehavior</span>&lt;TTenantId&gt; : <a href="http://msdn2.microsoft.com/en-us/library/ms599118" target="_blank">IServiceBehavior</a>, 
+	<a href="http://msdn2.microsoft.com/en-us/library/ms599102" target="_blank">IEndpointBehavior</a></pre></div><div id="ID0EBBEAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public class TenantPropagationBehavior&lt;TTenantId&gt; : IServiceBehavior, 
+	IEndpointBehavior</pre></div><div id="ID0EBBEAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBBEAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBBEAAAAA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBBEAAAAA_code_Plain_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBBEAAAAA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBBEAAAAA_code_Plain_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBBEAAAAA');</script><div id="ID0EABEAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EABEAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeft" id="ID0EABEAAAAA_tabimgleft"></div><div id="ID0EABEAAAAA_tab1" class="OH_CodeSnippetContainerTabSolo" EnableCopyCode="true"><a xmlns="">JavaScript</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EABEAAAAA_tabimgright"></div></div><div id="ID0EABEAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EABEAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EABEAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EABEAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EABEAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EABEAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EABEAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EABEAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="message">JavaScript does not support generic types or methods.</span></pre></div><div id="ID0EABEAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>JavaScript does not support generic types or methods.</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EABEAAAAA');</script></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Type Parameters</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><dl><dt><span class="parameter">TTenantId</span></dt><dd>
+            The type of the tenant ID to propagate. Must be nullable and
+            serializable so it can be added to a message header.
+            </dd></dl><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Remarks</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><p>
+            This behavior applies the <a href="73476EBC.htm" target="">TenantPropagationMessageInspector<span id="ID0ECHADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECHADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TTenantId<span id="ID0EAHADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAHADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a>
+            to WCF clients and service hosts to automatically get the tenant ID on
+            the WCF client end, add the ID to a header on the outbound message, and
+            have the tenant ID read from headers on the service side and added to the
+            operation context in an
+            <a href="4A991912.htm" target="">TenantIdentificationContextExtension</a>.
+            This allows you, on the service side, to use the
+            <a href="3C54ED92.htm" target="">OperationContextTenantIdentificationStrategy</a>
+            as your registered <a href="132D4E9E.htm" target="">ITenantIdentificationStrategy</a>.
+            </p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Examples</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><p>
+            In the following examples, the tenant ID is a <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">String</a>,
+            so the <span class="typeparameter">TTenantId</span> in the examples corresponds.
+            In your application, your tenant ID may be a nullable GUID or some other
+            object, so you'd need to update accordingly. That would mean passing
+            a different type as <span class="typeparameter">TTenantId</span> and implementing
+            a custom <a href="132D4E9E.htm" target="">ITenantIdentificationStrategy</a>
+            that parses the appropriate tenant ID from the execution context.
+            </p><p>
+            The following snippet shows what registration of this behavior
+            might look like in an ASP.NET application that consumes WCF services.
+            </p><div id="ID0EECAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EECAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeftActive" id="ID0EECAAAAA_tabimgleft"></div><div id="ID0EECAAAAA_tab1" class="OH_CodeSnippetContainerTabActive" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EECAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EECAAAAA_tab2" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>VB</a></div><div id="ID0EECAAAAA_tab3" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>C++</a></div><div id="ID0EECAAAAA_tab4" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EECAAAAA_tabimgright"></div></div><div id="ID0EECAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EECAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EECAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EECAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EECAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EECAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EECAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EECAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MvcApplication : HttpApplication, IContainerProviderAccessor
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>{
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  <span class="highlight-keyword">private</span> <span class="highlight-keyword">static</span> IContainerProvider _containerProvider;
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  <span class="highlight-keyword">public</span> IContainerProvider ContainerProvider
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  {
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-keyword">get</span> { <span class="highlight-keyword">return</span> _containerProvider; }
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  }
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> RegisterRoutes(RouteCollection routes)
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  {
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// Register your routes as normal.</span> 
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  }
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  <span class="highlight-keyword">protected</span> <span class="highlight-keyword">void</span> Application_Start()
+<span class="highlight-lineno">16</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  {
+<span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// Create a tenant ID strategy that will get the tenant from</span> 
+<span class="highlight-lineno">18</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// your ASP.NET request context.</span> 
+<span class="highlight-lineno">19</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-keyword">var</span> tenantIdStrategy = <span class="highlight-keyword">new</span> RequestParameterTenantIdentificationStrategy(<span class="highlight-literal">"tenant"</span>);
+<span class="highlight-lineno">20</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">21</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// Register application-level dependencies and controllers.</span> 
+<span class="highlight-lineno">22</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-keyword">var</span> builder = <span class="highlight-keyword">new</span> ContainerBuilder();
+<span class="highlight-lineno">23</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    builder.RegisterType&lt;HomeController&gt;();
+<span class="highlight-lineno">24</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// ... and so on.</span> 
+<span class="highlight-lineno">25</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">26</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// When you register the WCF service client, add the</span> 
+<span class="highlight-lineno">27</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// TenantPropagationBehavior to the Opening event:</span> 
+<span class="highlight-lineno">28</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">29</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    builder.Register(
+<span class="highlight-lineno">30</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      c =&gt; <span class="highlight-keyword">new</span> ChannelFactory&lt;IMultitenantService&gt;(
+<span class="highlight-lineno">31</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-keyword">new</span> BasicHttpBinding(),
+<span class="highlight-lineno">32</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-keyword">new</span> EndpointAddress(<span class="highlight-literal">"http://server/TheService.svc"</span>))).SingleInstance();
+<span class="highlight-lineno">33</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    builder.Register(
+<span class="highlight-lineno">34</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      c =&gt;
+<span class="highlight-lineno">35</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      {
+<span class="highlight-lineno">36</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-keyword">var</span> factory = c.Resolve&lt;ChannelFactory&lt;IMultitenantService&gt;&gt;();
+<span class="highlight-lineno">37</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        factory.Opening +=
+<span class="highlight-lineno">38</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>          (sender, args) =&gt;
+<span class="highlight-lineno">39</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            factory.Endpoint.Behaviors.Add(
+<span class="highlight-lineno">40</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            <span class="highlight-keyword">new</span> TenantPropagationBehavior&lt;<span class="highlight-keyword">string</span>&gt;(tenantIdStrategy);
+<span class="highlight-lineno">41</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-keyword">return</span> factory.CreateChannel()
+<span class="highlight-lineno">42</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      }).InstancePerHttpRequest();
+<span class="highlight-lineno">43</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">44</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// Create the multitenant container.</span> 
+<span class="highlight-lineno">45</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-keyword">var</span> mtc = <span class="highlight-keyword">new</span> MultitenantContainer(tenantIdStrategy, builder.Build());
+<span class="highlight-lineno">46</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">47</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// Register tenant specific overrides and set up the</span> 
+<span class="highlight-lineno">48</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// application container provider.</span> 
+<span class="highlight-lineno">49</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    _containerProvider = <span class="highlight-keyword">new</span> ContainerProvider(mtc);
+<span class="highlight-lineno">50</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">51</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">// Do other MVC setup like route registration, etc.</span> 
+<span class="highlight-lineno">52</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    ControllerBuilder.Current.SetControllerFactory(<span class="highlight-keyword">new</span> AutofacControllerFactory(<span class="highlight-keyword">this</span>.ContainerProvider));
+<span class="highlight-lineno">53</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    AreaRegistration.RegisterAllAreas();
+<span class="highlight-lineno">54</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    RegisterRoutes(RouteTable.Routes);
+<span class="highlight-lineno">55</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  }
+<span class="highlight-lineno">56</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>}</pre></div><div id="ID0EECAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public class MvcApplication : HttpApplication, IContainerProviderAccessor
+{
+  private static IContainerProvider _containerProvider;
+ 
+  public IContainerProvider ContainerProvider
+  {
+    get { return _containerProvider; }
+  }
+ 
+  public static void RegisterRoutes(RouteCollection routes)
+  {
+    // Register your routes as normal. 
+  }
+ 
+  protected void Application_Start()
+  {
+    // Create a tenant ID strategy that will get the tenant from 
+    // your ASP.NET request context. 
+    var tenantIdStrategy = new RequestParameterTenantIdentificationStrategy("tenant");
+ 
+    // Register application-level dependencies and controllers. 
+    var builder = new ContainerBuilder();
+    builder.RegisterType&lt;HomeController&gt;();
+    // ... and so on. 
+ 
+    // When you register the WCF service client, add the 
+    // TenantPropagationBehavior to the Opening event: 
+ 
+    builder.Register(
+      c =&gt; new ChannelFactory&lt;IMultitenantService&gt;(
+        new BasicHttpBinding(),
+        new EndpointAddress("http://server/TheService.svc"))).SingleInstance();
+    builder.Register(
+      c =&gt;
+      {
+        var factory = c.Resolve&lt;ChannelFactory&lt;IMultitenantService&gt;&gt;();
+        factory.Opening +=
+          (sender, args) =&gt;
+            factory.Endpoint.Behaviors.Add(
+            new TenantPropagationBehavior&lt;string&gt;(tenantIdStrategy);
+        return factory.CreateChannel()
+      }).InstancePerHttpRequest();
+ 
+    // Create the multitenant container. 
+    var mtc = new MultitenantContainer(tenantIdStrategy, builder.Build());
+ 
+    // Register tenant specific overrides and set up the 
+    // application container provider. 
+    _containerProvider = new ContainerProvider(mtc);
+ 
+    // Do other MVC setup like route registration, etc. 
+    ControllerBuilder.Current.SetControllerFactory(new AutofacControllerFactory(this.ContainerProvider));
+    AreaRegistration.RegisterAllAreas();
+    RegisterRoutes(RouteTable.Routes);
+  }
+}</pre></div><div id="ID0EECAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EECAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EECAAAAA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EECAAAAA_code_Plain_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EECAAAAA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EECAAAAA_code_Plain_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div></div></div><script>addSpecificTextLanguageTagSet('ID0EECAAAAA');</script><p>
+            Note that much of the above code is the standard ASP.NET application
+            wireup with Autofac. The important part is when you register the service
+            client - it needs to have a <span class="selflink">TenantPropagationBehavior<span id="ID0ECBDCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECBDCAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TTenantId<span id="ID0EABDCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EABDCAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></span>
+            attached to it that can get the container provider from the
+            current application.
+            </p><p>
+            The following snippet shows what registration of this behavior
+            looks like in a WCF application hosted in IIS:
+            </p><div id="ID0EBCAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EBCAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeftActive" id="ID0EBCAAAAA_tabimgleft"></div><div id="ID0EBCAAAAA_tab1" class="OH_CodeSnippetContainerTabActive" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EBCAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EBCAAAAA_tab2" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>VB</a></div><div id="ID0EBCAAAAA_tab3" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>C++</a></div><div id="ID0EBCAAAAA_tab4" class="OH_CodeSnippetContainerTabDisabledNotFirst" EnableCopyCode="true" disabled="true"><a>F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EBCAAAAA_tabimgright"></div></div><div id="ID0EBCAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EBCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBCAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> Global : System.Web.HttpApplication
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>{
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  <span class="highlight-keyword">protected</span> <span class="highlight-keyword">void</span> Application_Start(<span class="highlight-keyword">object</span> sender, EventArgs e)
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  {
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-comment">// Create the tenant ID strategy. Required for multitenant integration.</span> 
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-keyword">var</span> tenantIdStrategy = <span class="highlight-keyword">new</span> OperationContextTenantIdentificationStrategy();
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-comment">// Register application-level dependencies and service implementations.</span> 
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-keyword">var</span> builder = <span class="highlight-keyword">new</span> ContainerBuilder();
+<span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      builder.RegisterType&lt;BaseImplementation&gt;().As&lt;IMultitenantService&gt;();
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-comment">// ... and so on.</span> 
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-comment">// Create the multitenant container.</span> 
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-keyword">var</span> mtc = <span class="highlight-keyword">new</span> MultitenantContainer(tenantIdStrategy, builder.Build());
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">16</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-comment">// Configure tenant-specific overrides and set the WCF host container.</span> 
+<span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      Autofac.Extras.Multitenant.Wcf.AutofacHostFactory.Container = mtc;
+<span class="highlight-lineno">18</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span> 
+<span class="highlight-lineno">19</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-comment">// Add a behavior to service hosts that get created so incoming messages</span> 
+<span class="highlight-lineno">20</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-comment">// get inspected and the tenant ID can be parsed from message headers.</span> 
+<span class="highlight-lineno">21</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      Autofac.Extras.Multitenant.Wcf.AutofacHostFactory.HostConfigurationAction =
+<span class="highlight-lineno">22</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        host =&gt;
+<span class="highlight-lineno">23</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>          host.Opening += (s, args) =&gt;
+<span class="highlight-lineno">24</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            host.Description.Behaviors.Add(<span class="highlight-keyword">new</span> TenantPropagationBehavior&lt;<span class="highlight-keyword">string</span>&gt;(tenantIdStrategy));
+<span class="highlight-lineno">25</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  }
+<span class="highlight-lineno">26</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>}</pre></div><div id="ID0EBCAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public class Global : System.Web.HttpApplication
+{
+  protected void Application_Start(object sender, EventArgs e)
+  {
+      // Create the tenant ID strategy. Required for multitenant integration. 
+      var tenantIdStrategy = new OperationContextTenantIdentificationStrategy();
+ 
+      // Register application-level dependencies and service implementations. 
+      var builder = new ContainerBuilder();
+      builder.RegisterType&lt;BaseImplementation&gt;().As&lt;IMultitenantService&gt;();
+      // ... and so on. 
+ 
+      // Create the multitenant container. 
+      var mtc = new MultitenantContainer(tenantIdStrategy, builder.Build());
+ 
+      // Configure tenant-specific overrides and set the WCF host container. 
+      Autofac.Extras.Multitenant.Wcf.AutofacHostFactory.Container = mtc;
+ 
+      // Add a behavior to service hosts that get created so incoming messages 
+      // get inspected and the tenant ID can be parsed from message headers. 
+      Autofac.Extras.Multitenant.Wcf.AutofacHostFactory.HostConfigurationAction =
+        host =&gt;
+          host.Opening += (s, args) =&gt;
+            host.Description.Behaviors.Add(new TenantPropagationBehavior&lt;string&gt;(tenantIdStrategy));
+  }
+}</pre></div><div id="ID0EBCAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBCAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBCAAAAA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBCAAAAA_code_Plain_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBCAAAAA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div><div id="ID0EBCAAAAA_code_Plain_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre /></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBCAAAAA');</script><p>
+            Note that it is also very similar to standard wireup with Autofac WCF
+            integration, just that you use the multitenant WCF host, a multitenant
+            container, and a behavior to get the tenant ID from the operation context.
+            </p><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div class="seeAlsoStyle"><a href="28E183DB.htm" target="">TenantPropagationBehavior<span id="ID0EDADAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDADAAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TTenantId<span id="ID0EBADAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBADAAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script> Members</a></div><div class="seeAlsoStyle"><a href="EE9DF8AF.htm" target="">Autofac.Extras.Multitenant.Wcf Namespace</a></div><div class="seeAlsoStyle"><a href="73476EBC.htm" target="">Autofac.Extras.Multitenant.Wcf<span id="ID0EEABAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EEABAAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>TenantPropagationMessageInspector<span id="ID0ECABAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABAAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TTenantId<span id="ID0EAABAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABAAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></div><div class="seeAlsoStyle"><a href="3C54ED92.htm" target="">Autofac.Extras.Multitenant.Wcf<span id="ID0EBAAAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBAAAAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>OperationContextTenantIdentificationStrategy</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://autofac.org" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright (c) 2007-2013 Autofac Contributors (http://autofac.org)</a></p><div class="OH_feedbacklink"><a href="mailto:autofac@googlegroups.com?subject=Autofac+.NET+Inversion+of+Control+Container+TenantPropagationBehavior(TTenantId)+Class+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to autofac@googlegroups.com.</div></div></body></html>
