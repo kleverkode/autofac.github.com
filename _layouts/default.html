@@ -4,71 +4,16 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{{site.name}}: {{ page.title }}</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-		<link rel="stylesheet" href="/css/main.css">
-		<script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	{% include headcontent.html %}
 	</head>
 	<body>
 		<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="brand" href="/">Autofac</a>
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="/scriptgen/">NuGet Script Generator</a></li>
-									<li class="divider"></li>
-									<li><a href="https://nuget.org/packages?q=Author%3A%22Autofac+Contributors%22+Owner%3A%22alexmg%22+Autofac*">NuGet Gallery</a></li>
-									<li><a href="https://code.google.com/p/autofac/downloads/list">Zip Archives</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Help <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li class="nav-header">Learn</li>
-									<li><a href="https://code.google.com/p/autofac/wiki/GettingStarted">Quick Start</a></li>
-									<li><a href="https://code.google.com/p/autofac/w/list">Wiki</a></li>
-									<li><a href="/apidoc/">API Documentation</a></li>
-									<li class="divider"></li>
-									<li class="nav-header">Ask Questions</li>
-									<li><a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a></li>
-									<li><a href="https://groups.google.com/forum/#forum/autofac">Discussion Forum</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">The Project <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li class="nav-header">Found an Issue?</li>
-									<li><a href="https://code.google.com/p/autofac/issues/list">Bugs/Enhancement Requests</a></li>
-									<li class="divider"></li>
-									<li class="nav-header">Source</li>
-									<li><a href="https://code.google.com/p/autofac/">Google Code Site</a></li>
-									<li><a href="https://code.google.com/p/autofac/source/browse/">Browse/Checkout</a></li>
-									<li><a href="https://code.google.com/p/autofac/wiki/ContributionGuidelines">Contribute</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</div>
+			{% include navbar.html %}
 		</div>
-		<div id="main_content" class="container" style="padding-top: 60px;">
+		<div id="main_content" class="container">
 			{{ content }}
 
 			<hr />
@@ -77,20 +22,6 @@
 			</footer>
 
 		</div> <!-- /container -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="/js/vendor/bootstrap.min.js"></script>
-		<script src="/js/plugins.js"></script>
-		<script src="/js/main.js"></script>
-		<script>
-			var _gaq=[['_setAccount','UA-2985547-1'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g,s)}(document,'script'));
-		</script>
-		{%if page.scripts %}
-			{% for script in page.scripts %}
-		<script src="{{script}}"></script>
-			{% endfor %}
-		{% endif %}
+		{% include footcontent.html %}
 	</body>
 </html>
