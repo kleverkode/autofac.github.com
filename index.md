@@ -69,25 +69,28 @@ title: Home
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
-		<img class="featurette-image pull-right" src="img/fluent-syntax.png">
+		<img class="featurette-image pull-right" src="img/fluent-syntax.png" alt="Autofac fluent syntax example">
 		<h2 class="featurette-heading">Fluent syntax. <span class="muted">Build complex registrations with ease.</span></h2>
 		<p class="lead">Defining your component registrations is simple with the flexible fluent syntax Autofac provides.</p>
+		<p><a href="https://code.google.com/p/autofac/wiki/ComponentCreation" class="btn btn-primary btn-large">Learn about component registration &raquo;</a></p>
 	</div>
 
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
 		<img class="featurette-image pull-left" src="img/fluent-syntax.png">
-		<h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-		<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		<h2 class="featurette-heading">Flexible configuration system. <span class="muted">XML or code - your call.</span></h2>
+		<p class="lead">Strike a balance between the deployment-time benefits of XML configuration and the clarity of code with Autofac modules.</p>
+		<p><a href="https://code.google.com/p/autofac/wiki/XmlConfiguration" class="btn btn-primary btn-large">Dive into configuration &raquo;</a></p>
 	</div>
 
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
 		<img class="featurette-image pull-right" src="img/fluent-syntax.png">
-		<h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-		<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		<h2 class="featurette-heading">Added functionality through Extras. <span class="muted">Go beyond standard integration.</span></h2>
+		<p class="lead">Support for multitenant dependency injection, aggregate services, automatic dynamic proxy wire-up, Enterprise Library integration, and more through the Autofac.Extras extension projects.</p>
+		<p><a href="https://code.google.com/p/autofac/wiki/NuGetPackages" class="btn btn-primary btn-large">See the full list &raquo;</a></p>
 	</div>
 
 	<hr class="featurette-divider" />
