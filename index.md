@@ -5,7 +5,7 @@ title: Home
 <div id="heroCarousel" class="carousel slide">
 	<div class="carousel-inner">
 		<div class="item active">
-			<img src="img/carousel-1.jpg" />
+			<img src="img/carousel-1.jpg" alt="" />
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Autofac</h1>
@@ -15,7 +15,7 @@ title: Home
 			</div>
 		</div>
 		<div class="item">
-			<img src="img/carousel-2.jpg" />
+			<img src="img/carousel-2.jpg" alt="" />
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Got a Question?</h1>
@@ -25,7 +25,7 @@ title: Home
 			</div>
 		</div>
 		<div class="item">
-			<img src="img/carousel-3.jpg" />
+			<img src="img/carousel-3.jpg" alt="" />
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Easy Integration</h1>
@@ -35,11 +35,6 @@ title: Home
 			</div>
 		</div>
 	</div>
-	<ol class="carousel-indicators">
-		<li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#heroCarousel" data-slide-to="1"></li>
-		<li data-target="#heroCarousel" data-slide-to="2"></li>
-	</ol>
 	<a class="carousel-control left" href="#heroCarousel" data-slide="prev">&lsaquo;</a>
 	<a class="carousel-control right" href="#heroCarousel" data-slide="next">&rsaquo;</a>
 </div>
@@ -69,7 +64,7 @@ title: Home
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
-		<img class="featurette-image pull-right" src="img/fluent-syntax.png" alt="Autofac fluent syntax example">
+		<img class="featurette-image pull-right" src="img/fluent-syntax.png" alt="Autofac fluent syntax example" />
 		<h2 class="featurette-heading">Fluent syntax. <span class="muted">Build complex registrations with ease.</span></h2>
 		<p class="lead">Defining your component registrations is simple with the flexible fluent syntax Autofac provides.</p>
 		<p><a href="https://code.google.com/p/autofac/wiki/ComponentCreation" class="btn btn-primary btn-large">Learn about component registration &raquo;</a></p>
@@ -78,7 +73,7 @@ title: Home
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
-		<img class="featurette-image pull-left" src="img/fluent-syntax.png">
+		<img class="featurette-image pull-left" src="img/fluent-syntax.png" alt="Flexible configuration" />
 		<h2 class="featurette-heading">Flexible configuration system. <span class="muted">XML or code - your call.</span></h2>
 		<p class="lead">Strike a balance between the deployment-time benefits of XML configuration and the clarity of code with Autofac modules.</p>
 		<p><a href="https://code.google.com/p/autofac/wiki/XmlConfiguration" class="btn btn-primary btn-large">Dive into configuration &raquo;</a></p>
@@ -87,7 +82,7 @@ title: Home
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
-		<img class="featurette-image pull-right" src="img/fluent-syntax.png">
+		<img class="featurette-image pull-right" src="img/fluent-syntax.png" alt="Extras extend integration" />
 		<h2 class="featurette-heading">Added functionality through Extras. <span class="muted">Go beyond standard integration.</span></h2>
 		<p class="lead">Support for multitenant dependency injection, aggregate services, automatic dynamic proxy wire-up, Enterprise Library integration, and more through the Autofac.Extras extension projects.</p>
 		<p><a href="https://code.google.com/p/autofac/wiki/NuGetPackages" class="btn btn-primary btn-large">See the full list &raquo;</a></p>
