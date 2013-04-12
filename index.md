@@ -5,7 +5,7 @@ title: Home
 <div id="heroCarousel" class="carousel slide">
 	<div class="carousel-inner">
 		<div class="item active">
-			<img src="background.jpg" />
+			<img src="img/carousel-1.jpg" />
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Autofac</h1>
@@ -15,7 +15,7 @@ title: Home
 			</div>
 		</div>
 		<div class="item">
-			<img src="background.jpg" />
+			<img src="img/carousel-2.jpg" />
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Got a Question?</h1>
@@ -25,7 +25,7 @@ title: Home
 			</div>
 		</div>
 		<div class="item">
-			<img src="background.jpg" />
+			<img src="img/carousel-3.jpg" />
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Easy Integration</h1>
