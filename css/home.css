@@ -195,7 +195,7 @@ body {
 @media (max-width: 767px) {
 
 	.navbar-inner {
-		margin: -20px;
+		margin: -20px 0px -20px 0px;
 	}
 
 	.carousel {
