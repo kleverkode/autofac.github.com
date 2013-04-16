@@ -9,7 +9,7 @@ title: Home
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Autofac</h1>
-					<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET. It works in .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
+					<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
 					<p><a href="https://code.google.com/p/autofac/wiki/GettingStarted" class="btn btn-primary btn-large">Get Started &raquo;</a></p>
 				</div>
 			</div>
@@ -19,7 +19,7 @@ title: Home
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Got a Question?</h1>
-					<p class="lead">We're here to help! The Autofac community is active on <a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a>. There's also <a href="https://groups.google.com/forum/#forum/autofac">a Google Group for Autofac Users</a> where you can ask more wide-ranging questions or have discussions.</p>
+					<p class="lead">We're here to help! The Autofac community is active on <a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a> as well as <a href="https://groups.google.com/forum/#forum/autofac">the Google Group for Autofac Users</a>.</p>
 					<p><a href="http://stackoverflow.com/questions/tagged/autofac" class="btn btn-primary btn-large">Ask a Question &raquo;</a></p>
 				</div>
 			</div>
@@ -29,7 +29,7 @@ title: Home
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Easy Integration</h1>
-					<p class="lead">Autofac has integration ready for many .NET application types - MVC, web forms, SignalR, WCF, and others. Adding Autofac to your app is just a couple of NuGet references away... <em>and we'll even write the script for you!</em></p>
+					<p class="lead">Autofac has integration for many .NET application types, all just a couple of NuGet references away... <em>and we'll even write the script for you!</em></p>
 					<p><a href="/scriptgen/" class="btn btn-primary btn-large">Get a NuGet Script &raquo;</a></p>
 				</div>
 			</div>
