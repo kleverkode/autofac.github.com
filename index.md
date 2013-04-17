@@ -76,7 +76,7 @@ title: Home
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
-		<img class="featurette-image pull-left" src="img/fluent-syntax.png" alt="Flexible configuration" />
+		<img class="featurette-image pull-left" src="img/flexible-configuration.png" alt="Flexible configuration" />
 		<h2 class="featurette-heading">Flexible configuration system. <span class="muted">XML or code - your call.</span></h2>
 		<p class="lead">Strike a balance between the deployment-time benefits of XML configuration and the clarity of code with Autofac modules.</p>
 		<p><a href="https://code.google.com/p/autofac/wiki/XmlConfiguration" class="btn btn-primary btn-large">Dive into configuration &raquo;</a></p>
@@ -94,7 +94,7 @@ title: Home
 	<hr class="featurette-divider" />
 
 	<footer>
-	<p>&copy; Autofac Contributors 2013</p>
+	<p>&copy; Autofac Contributors 2013. Icons from <a href="http://www.iconfinder.com/iconsets/dellipack">Dellipack</a> and <a href="http://www.iconspedia.com/pack/dellios-system-2356/">DelliOS System</a>.</p>
 	</footer>
 </div>
 
