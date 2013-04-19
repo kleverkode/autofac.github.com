@@ -1,4 +1,4 @@
 auto: true
 server: true
 name: "Autofac"
-include: scriptgen
+exclude: assets

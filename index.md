@@ -85,7 +85,7 @@ title: Home
 	<hr class="featurette-divider" />
 
 	<div class="featurette">
-		<img class="featurette-image pull-right" src="img/fluent-syntax.png" alt="Extras extend integration" />
+		<img class="featurette-image pull-right" src="img/autofac-extras.png" alt="Extras extend integration" />
 		<h2 class="featurette-heading">Added functionality through Extras. <span class="muted">Go beyond standard integration.</span></h2>
 		<p class="lead">Support for multitenant dependency injection, aggregate services, automatic dynamic proxy wire-up, Enterprise Library integration, and more through the Autofac.Extras extension projects.</p>
 		<p><a href="https://code.google.com/p/autofac/wiki/NuGetPackages" class="btn btn-primary btn-large">See the full list &raquo;</a></p>
