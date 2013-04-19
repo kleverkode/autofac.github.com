@@ -38,5 +38,9 @@
 	}
 
 	generateScript();
-	$("#select_all").click(selectScript);
+	if (document.selection || window.getSelection) {
+		$("#select_all").click(selectScript);
+	} else {
+		$("#select_all").hide();
+	}
 }(jQuery));
