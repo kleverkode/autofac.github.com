@@ -12,6 +12,16 @@ To run locally (Windows):
   1. Run `jekyll --serve`
   1. In a browser, visit [http://localhost:4000](http://localhost:4000)
 
+To update the API docs:
+  1. Delete the content in the `apidoc` folder.
+  1. Place the "website" style generated API doc from the build into the `apidoc` folder.
+  1. Rename the `Index.html` to `index.html` (it's case-sensitive).
+  1. Push the changes.
+
+To update the minified script/CSS:
+  1. Open a Visual Studio command prompt.
+  1. Run `msbuild default.proj` to minify scripts.
+
 Jekyll resources:
   * [Jekyll Documentation](https://github.com/mojombo/jekyll/wiki)
   * [Learning Jekyll by Example](http://www.andrewmunsell.com/tutorials/jekyll-by-example/)
