@@ -80,7 +80,7 @@ body {
 .carousel .item {
 	height: 500px;
 }
-.carousel img {
+.carousel img.background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -91,9 +91,10 @@ body {
 .carousel-caption {
 	background-color: transparent;
 	position: static;
-	max-width: 550px;
+	max-width: 800px;
 	padding: 0 20px;
-	margin-top: 200px;
+	margin-top: 100px;
+	display: table;
 }
 .carousel-caption h1,
 .carousel-caption .lead {
@@ -104,6 +105,18 @@ body {
 }
 .carousel-caption .btn {
 	margin-top: 10px;
+}
+
+.carousel-caption-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.carousel-caption-content img{
+	width: auto;
+	height: auto;
+	max-width: 300px;
+	max-height: 300px;
 }
 
 
@@ -173,7 +186,7 @@ body {
 	.carousel .item {
 		height: 400px;
 	}
-	.carousel img {
+	.carousel img.background {
 		width: auto;
 		height: 400px;
 	}
@@ -181,6 +194,10 @@ body {
 		width: 85%;
 		padding: 0 70px;
 		margin-top: 100px;
+	}
+	.carousel-caption-content img {
+		max-height: 250px;
+		max-width: 250px;
 	}
 
 	.featurette {
@@ -213,8 +230,12 @@ body {
 	.carousel .item {
 		height: 300px;
 	}
-	.carousel img {
+	.carousel img.background {
 		height: 300px;
+	}
+	.carousel-caption-content img {
+		max-height: 150px;
+		max-width: 150px;
 	}
 	.carousel-caption {
 		width: 65%;
@@ -240,5 +261,10 @@ body {
 		font-size: 18px;
 		line-height: 1.5;
 	}
+}
 
+@media (max-width: 640px) {
+	.carousel-caption-content img {
+		display: none;
+	}
 }

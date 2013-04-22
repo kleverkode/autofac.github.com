@@ -5,32 +5,47 @@ title: Home
 <div id="heroCarousel" class="carousel slide">
 	<div class="carousel-inner">
 		<div class="item active">
-			<img src="img/carousel-1.jpg" alt="" />
+			<img src="img/carousel-1.jpg" class="background" alt="" />
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>Autofac</h1>
-					<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
-					<p><a href="https://code.google.com/p/autofac/wiki/GettingStarted" class="btn btn-primary btn-large">Get Started &raquo;</a></p>
+					<div class="carousel-caption-content">
+						<h1>Autofac</h1>
+						<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
+						<p><a href="https://code.google.com/p/autofac/wiki/GettingStarted" class="btn btn-primary btn-large">Get Started &raquo;</a></p>
+					</div>
+					<div class="carousel-caption-content">
+						<img src="img/autofac-extras.png" width="300" height="300" />
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img src="img/carousel-2.jpg" alt="" />
+			<img src="img/carousel-2.jpg" class="background" alt="" />
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>Got a Question?</h1>
-					<p class="lead">We're here to help! The Autofac community is active on <a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a> as well as <a href="https://groups.google.com/forum/#forum/autofac">the Google Group for Autofac Users</a>.</p>
-					<p><a href="http://stackoverflow.com/questions/tagged/autofac" class="btn btn-primary btn-large">Ask a Question &raquo;</a></p>
+					<div class="carousel-caption-content">
+						<h1>Got a Question?</h1>
+						<p class="lead">We're here to help! The Autofac community is active on <a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a> as well as <a href="https://groups.google.com/forum/#forum/autofac">the Google Group for Autofac Users</a>.</p>
+						<p><a href="http://stackoverflow.com/questions/tagged/autofac" class="btn btn-primary btn-large">Ask a Question &raquo;</a></p>
+					</div>
+					<div class="carousel-caption-content">
+						<img src="img/autofac-extras.png" width="300" height="300" />
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img src="img/carousel-3.jpg" alt="" />
+			<img src="img/carousel-3.jpg" class="background" alt="" />
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>Easy Integration</h1>
-					<p class="lead">Autofac has integration for many .NET application types, all just a couple of NuGet references away... <em>and we'll even write the script for you!</em></p>
-					<p><a href="/scriptgen/" class="btn btn-primary btn-large">Get a NuGet Script &raquo;</a></p>
+					<div class="carousel-caption-content">
+						<h1>Easy Integration</h1>
+						<p class="lead">Autofac has integration for many .NET application types, all just a couple of NuGet references away... <em>and we'll even write the script for you!</em></p>
+						<p><a href="/scriptgen/" class="btn btn-primary btn-large">Get a NuGet Script &raquo;</a></p>
+					</div>
+					<div class="carousel-caption-content">
+						<img src="img/autofac-extras.png" width="300" height="300" />
+					</div>
 				</div>
 			</div>
 		</div>
