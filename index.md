@@ -14,7 +14,7 @@ title: Home
 						<p><a href="https://code.google.com/p/autofac/wiki/GettingStarted" class="btn btn-primary btn-large">Get Started &raquo;</a></p>
 					</div>
 					<div class="carousel-caption-content">
-						<img src="img/autofac-extras.png" width="300" height="300" />
+						<img src="img/carousel-logo.png" width="300" height="243" alt="Autofac" />
 					</div>
 				</div>
 			</div>
