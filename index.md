@@ -1,7 +1,22 @@
 ---
 layout: home
 title: Home
+css: ['/css/home.css']
 ---
+<!-- 
+	Icons on home page are from Dellipack: http://www.iconfinder.com/iconsets/dellipack
+-->
+<header class="jumbotron subhead">
+	<div class="container">
+	<h1>Autofac</h1>
+	<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
+	<p>
+		<a href="https://code.google.com/p/autofac/wiki/GettingStarted" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
+		<a href="/scriptgen/" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
+	</p>
+	</div>
+</header>
+<!--
 <div id="heroCarousel" class="carousel slide">
 	<div class="carousel-inner">
 		<div class="item active">
@@ -53,64 +68,49 @@ title: Home
 	<a class="carousel-control left" href="#heroCarousel" data-slide="prev">&lsaquo;</a>
 	<a class="carousel-control right" href="#heroCarousel" data-slide="next">&rsaquo;</a>
 </div>
-<div class="container marketing">
-	<div class="row">
-		<div class="span4">
-			<img src="img/icon_arrow.png" alt="Download" width="128" height="128" />
-			<h2>Download</h2>
-			<p>The easiest way to get Autofac is through NuGet. We can <a href="/scriptgen/">generate a NuGet script for you</a> or you can <a href="https://nuget.org/packages?q=Author%3A%22Autofac+Contributors%22+Owner%3A%22alexmg%22+Autofac*">go through the NuGet Gallery</a>.</p>
-			<p>If you're not into NuGet, you can also <a href="https://code.google.com/p/autofac/downloads/list">download the packages in zip archives</a>.</p>
-			<p><a class="btn" href="/scriptgen/">Install via NuGet &raquo;</a></p>
-		</div>
-		<div class="span4">
-			<img src="img/icon_school.png" alt="Learn" width="128" height="128" />
-			<h2>Learn</h2>
-			<p>If you're new to Autofac, <a href="https://code.google.com/p/autofac/wiki/GettingStarted">the Quick Start guide</a> is a good place to start learning about how to use Autofac.</p>
-			<p>For more detailed information, <a href="https://code.google.com/p/autofac/w/list">check out the Autofac wiki</a>, where Autofac features and examples are shown more in depth, or jump to <a href="/apidoc/">the API documentation</a>.</p>
-			<p>And if you have a question? Hit us up on <a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a>.</p>
-			<p><a class="btn" href="https://code.google.com/p/autofac/wiki/GettingStarted">Quick Start &raquo;</a></p>
-	   </div>
-		<div class="span4">
-			<img src="img/icon_people.png" alt="Get Involved" width="128" height="128" />
-			<h2>Get Involved</h2>
-			<p>Been using Autofac and found something amiss? You can let us know by <a href="https://code.google.com/p/autofac/issues/list">filing an issue</a>.</p>
-			<p>Want to help us improve Autofac and fix those issues? Even better. <a href="https://code.google.com/p/autofac/source/browse/">Check out the source</a> and our <a href="https://code.google.com/p/autofac/wiki/ContributionGuidelines">contributor's guide</a>, and drop us a line on <a href="https://groups.google.com/forum/#forum/autofac">the discussion forum</a>!</p>
-			<p><a class="btn" href="https://code.google.com/p/autofac/">Google Code Site &raquo;</a></p>
+-->
+<div class="container">
+	<div class="marketing">
+		<div class="row-fluid">
+			<div class="span6">
+				<h2>Register Components</h2>
+			</div>
+			<div class="span6">
+				<h2>Express Dependencies</h2>
+			</div>
 		</div>
 	</div>
-
-	<hr class="featurette-divider" />
-
-	<div class="featurette">
-		<img class="featurette-image pull-right" src="img/fluent-syntax.png" alt="Autofac fluent syntax example" />
-		<h2 class="featurette-heading">Fluent syntax. <span class="muted">Build complex registrations with ease.</span></h2>
-		<p class="lead">Defining your component registrations is simple with the flexible fluent syntax Autofac provides.</p>
-		<p><a href="https://code.google.com/p/autofac/wiki/ComponentCreation" class="btn btn-primary btn-large">Learn about component registration &raquo;</a></p>
+	<div class="marketing">
+		<div class="row-fluid">
+			<div class="span6">
+				<h2>Integrate and Extend</h2>
+			</div>
+			<div class="span6">
+				<h2>Flexible Module System</h2>
+			</div>
+		</div>
 	</div>
-
-	<hr class="featurette-divider" />
-
-	<div class="featurette">
-		<img class="featurette-image pull-left" src="img/flexible-configuration.png" alt="Flexible configuration" />
-		<h2 class="featurette-heading">Flexible configuration system. <span class="muted">XML or code - your call.</span></h2>
-		<p class="lead">Strike a balance between the deployment-time benefits of XML configuration and the clarity of code with Autofac modules.</p>
-		<p><a href="https://code.google.com/p/autofac/wiki/XmlConfiguration" class="btn btn-primary btn-large">Dive into configuration &raquo;</a></p>
+	<div class="marketing">
+		<h1>Dive In</h1>
+		<p class="marketing-byline">Want to download Autofac or learn more? Here's how.</p>
+		<div class="row-fluid">
+			<div class="span4">
+				<img class="marketing-img" src="img/icon_arrow.png" alt="Download" width="128" height="128" />
+				<h2>Download</h2>
+				<p>The easiest way to get Autofac is through NuGet. We can <a href="/scriptgen/">generate a NuGet script for you</a> or you can <a href="https://nuget.org/packages?q=Author%3A%22Autofac+Contributors%22+Owner%3A%22alexmg%22+Autofac*">go through the NuGet Gallery</a>. You can also <a href="https://code.google.com/p/autofac/downloads/list">download the packages as zip files</a>.</p>
+			</div>
+			<div class="span4">
+				<img class="marketing-img" src="img/icon_school.png" alt="Learn" width="128" height="128" />
+				<h2>Learn</h2>
+				<p>If you're new to Autofac, <a href="https://code.google.com/p/autofac/wiki/GettingStarted">the Quick Start guide</a> is a good place to start. There's also <a href="https://code.google.com/p/autofac/w/list">lots of in-depth info on the Autofac wiki</a> as well as <a href="/apidoc/">full API documentation</a>. For questions, hit us up on <a href="http://stackoverflow.com/questions/tagged/autofac">StackOverflow</a>.</p>
+			</div>
+			<div class="span4">
+				<img class="marketing-img" src="img/icon_people.png" alt="Get Involved" width="128" height="128" />
+				<h2>Get Involved</h2>
+				<p>Found an issue? <a href="https://code.google.com/p/autofac/issues/list">Let us know!</a> Want to help us improve Autofac? <a href="https://code.google.com/p/autofac/source/browse/">Check out the source</a> and our <a href="https://code.google.com/p/autofac/wiki/ContributionGuidelines">contributor's guide</a>, and drop us a line on <a href="https://groups.google.com/forum/#forum/autofac">the discussion forum</a>!</p>
+			</div>
+		</div>
 	</div>
-
-	<hr class="featurette-divider" />
-
-	<div class="featurette">
-		<img class="featurette-image pull-right" src="img/autofac-extras.png" alt="Extras extend integration" />
-		<h2 class="featurette-heading">Added functionality through Extras. <span class="muted">Go beyond standard integration.</span></h2>
-		<p class="lead">Support for multitenant dependency injection, aggregate services, automatic dynamic proxy wire-up, Enterprise Library integration, and more through the Autofac.Extras extension projects.</p>
-		<p><a href="https://code.google.com/p/autofac/wiki/NuGetPackages" class="btn btn-primary btn-large">See the full list &raquo;</a></p>
-	</div>
-
-	<hr class="featurette-divider" />
-
-	<footer>
-	<p>&copy; Autofac Contributors 2013. Icons from <a href="http://www.iconfinder.com/iconsets/dellipack">Dellipack</a> and <a href="http://www.iconspedia.com/pack/dellios-system-2356/">DelliOS System</a>.</p>
-	</footer>
 </div>
 
 
