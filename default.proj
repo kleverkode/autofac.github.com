@@ -10,10 +10,12 @@
     <Target Name="Minify">
         <ItemGroup>
             <CssToMinify Include="$(MSBuildProjectDirectory)\css\*.css"
-                         Exclude="$(MSBuildProjectDirectory)\css\bootstrap*.css;**\*.min.css" />
+                         Exclude="$(MSBuildProjectDirectory)\css\bootstrap*.css;$(MSBuildProjectDirectory)\css\*.min.css" />
             <JsToMinify Include="$(MSBuildProjectDirectory)\js\*.js"
-                        Exclude="**\*.min.js" />
+                        Exclude="**\*.min.js;$(MSBuildProjectDirectory)\js\vendor\**\*.js" />
         </ItemGroup>
+        <Message Text="Minifying: %(CssToMinify.FullPath)" />
+        <Message Text="Minifying: %(JsToMinify.FullPath)" />
         <AjaxMin JsSourceFiles="@(JsToMinify)"
                  JsSourceExtensionPattern="\.js$"
                  JsTargetExtension=".min.js"
