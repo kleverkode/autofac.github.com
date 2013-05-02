@@ -74,11 +74,14 @@ body > .navbar .brand:hover {
   line-height: 1.25;
   margin-bottom: 20px;
 }
+.jumbotron img {
+  float: right;
+}
 
-/* Link styles (used on .masthead-links as well) */
+/* Link styles */
 .jumbotron a {
   color: #fff;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.65);
   -webkit-transition: all .2s ease-in-out;
      -moz-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -88,12 +91,6 @@ body > .navbar .brand:hover {
   text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
 
-/* Pattern overlay
-------------------------- */
-.jumbotron .container {
-  position: relative;
-  z-index: 2;
-}
 
 /* Marketing section of Overview
 -------------------------------------------------- */
@@ -189,6 +186,9 @@ body > .navbar .brand:hover {
     margin-right: -20px;
     margin-left:  -20px;
   }
+  .jumbotron img {
+    max-height: 100px;
+  }
   .marketing .span4 {
     margin-bottom: 40px;
   }
@@ -221,6 +221,10 @@ body > .navbar .brand:hover {
   /* Downsize the jumbotrons */
   .jumbotron h1 {
     font-size: 45px;
+    text-align: center;
+  }
+  .jumbotron p {
+    text-align: center;
   }
   .jumbotron p,
   .jumbotron .btn {
@@ -230,11 +234,8 @@ body > .navbar .brand:hover {
     display: block;
     margin: 0 auto;
   }
-
-  /* center align subhead text like the masthead */
-  .subhead h1,
-  .subhead p {
-    text-align: center;
+  .jumbotron img {
+    max-height: 80px;
   }
 
   /* Marketing on home */

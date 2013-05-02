@@ -6,14 +6,15 @@ css: ['/css/home.min.css']
 <!-- 
 	Icons on home page are from Dellipack: http://www.iconfinder.com/iconsets/dellipack
 -->
-<header class="jumbotron subhead">
+<header class="jumbotron">
 	<div class="container">
-	<h1>Autofac</h1>
-	<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
-	<p>
-		<a href="https://code.google.com/p/autofac/wiki/GettingStarted" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
-		<a href="/scriptgen/" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
-	</p>
+		<img src="img/carousel-logo.png" alt="Autofac" />
+		<h1>Autofac</h1>
+		<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
+		<p>
+			<a href="https://code.google.com/p/autofac/wiki/GettingStarted" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
+			<a href="/scriptgen/" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
+		</p>
 	</div>
 </header>
 
@@ -22,26 +23,100 @@ css: ['/css/home.min.css']
 		<div class="row-fluid">
 			<div class="span6">
 				<h2>Register Components</h2>
+				<p>Build up containers with <a href="https://code.google.com/p/autofac/wiki/ComponentCreation">lambdas, types, or pre-built instances</a> of components. You can also <a href="https://code.google.com/p/autofac/wiki/Scanning">scan assemblies for registrations</a>.</p>
 <pre class="prettyprint linenums">
-public void Foo()
-{
-  Console.WriteLine("boo");
-}
+var builder = new ContainerBuilder();
+
+// Register individual components
+builder.RegisterInstance(new TaskRepository)
+       .As&lt;ITaskRepository&gt;();
+builder.RegisterType&lt;TaskController&gt;();
+builder.Register(c =&gt; new LogManager(DateTime.Now))
+       .As&lt;ILogger&gt;();
+
+// Scan an assembly for components
+builder.RegisterAssemblyTypes(myAssembly)
+       .Where(t =&gt; t.Name.EndsWith("Repository"))
+       .AsImplementedInterfaces();
+
+var container = builder.Build();
 </pre>
 			</div>
 			<div class="span6">
 				<h2>Express Dependencies</h2>
+				<p>Let Autofac inject your constructor parameters for you. It can also handle <a href="https://code.google.com/p/autofac/wiki/PropertyInjection">property</a> and <a href="https://code.google.com/p/autofac/wiki/MethodInjection">method</a> injection.</p>
+<pre class="prettyprint linenums">
+public class TaskController
+{
+  private ITaskRepository _repository;
+  private ILogger _logger;
+
+  // Autofac will automatically find the registered
+  // values and pass them in for you.
+  public TaskController(
+    ITaskRepository repository,
+    ILogger logger)
+  {
+    this._repository = repository;
+    this._logger = logger;
+  }
+}
+</pre>
 			</div>
 		</div>
 	</div>
 	<div class="marketing">
 		<div class="row-fluid">
 			<div class="span6">
-				<h2>Integrate and Extend</h2>
-				<p>Autofac has integration for many .NET application types, all just a couple of NuGet references away... <em>and we'll even write the script for you!</em></p>
+				<h2>Flexible Module System</h2>
+				<p>Strike a balance between the deployment-time benefits of <a href="https://code.google.com/p/autofac/wiki/XmlConfiguration">XML configuration</a> and the power of code with <a href="https://code.google.com/p/autofac/wiki/StructuringWithModules">Autofac modules</a>.</p>
+<pre class="prettyprint linenums">
+// Specify complex registrations in code
+public class CarTransportModule : Module
+{
+  public bool ObeySpeedLimit { get; set; }
+
+  protected override void Load(ContainerBuilder builder)
+  {
+    builder.RegisterType&lt;Car&gt;().As&lt;IVehicle&gt;();
+
+    if (ObeySpeedLimit)
+      builder.RegisterType&lt;SaneDriver&gt;().As&lt;IDriver&gt;();
+    else
+      builder.RegisterType&lt;CrazyDriver&gt;().As&lt;IDriver&gt;();
+  }
+}
+</pre>
+<pre class="prettyprint linenums">
+&lt;!-- Change deployment-time behavior with XML --&gt;
+&lt;autofac&gt;
+  &lt;module type="CarTransportModule"&gt;
+    &lt;properties&gt;
+      &lt;property name="ObeySpeedLimit" value="true" /&gt;
+    &lt;/properties&gt;
+  &lt;/module&gt;
+&lt;/autofac&gt;
+</pre>
 			</div>
 			<div class="span6">
-				<h2>Flexible Module System</h2>
+				<h2>Simple Extension Points</h2>
+				<p>Autofac provides <a href="https://code.google.com/p/autofac/wiki/LifetimeEvents">activation events</a> to let you know when components are being activated or released, allowing for a lot of customization with little code.</p>
+<pre class="prettyprint linenums">
+var builder = new ContainerBuilder();
+
+// Once a listener has been fully constructed and is
+// ready to be used, automatically start listening.
+builder.RegisterType&lt;Listener&gt;()
+       .As&lt;IListener&gt;()
+       .OnActivated(e =&gt; e.Instance.StartListening());
+
+// When a processor is being constructed but before
+// it's ready to be used, call an initialization method.
+builder.RegisterType&lt;Processor&gt;()
+       .OnActivating(e =&gt; e.Instance.Initialize());
+
+var container = builder.Build();
+</pre>
 			</div>
 		</div>
 	</div>

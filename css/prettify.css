@@ -32,7 +32,7 @@
 }
 
 /* Put a border around prettyprinted code snippets. */
-pre.prettyprint { padding: 8px; border: 1px solid #888 }
+pre.prettyprint { padding: 8px; border: 1px solid #888; overflow: auto; }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin: 0 0 0 33px; } /* IE indents via margin-left */
@@ -42,6 +42,7 @@ ol.linenums li {
   color: #bebec5;
   line-height: 20px;
   text-shadow: 0 1px 0 #fff;
+  white-space: pre;
 }
 
 .linenums > li:nth-child(even) {
