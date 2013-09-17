@@ -1,4 +1,2 @@
-auto: true
-server: true
 name: "Autofac"
-exclude: assets, tools, default.proj
+exclude: [assets, tools, default.proj]

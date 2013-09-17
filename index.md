@@ -3,7 +3,7 @@ layout: home
 title: Home
 css: ['/css/home.min.css']
 ---
-<!-- 
+<!--
 	Icons on home page are from Dellipack: http://www.iconfinder.com/iconsets/dellipack
 -->
 <header class="jumbotron">

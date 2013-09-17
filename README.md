@@ -9,7 +9,7 @@ To run locally (Windows):
   1. Install [Ruby and the Ruby Development Kit](http://rubyinstaller.org/downloads/).
   1. At a regular (not irb) command prompt, run `gem install jekyll`
   1. Change to the local repo directory with the site.
-  1. Run `jekyll --serve`
+  1. Run `jekyll serve -w`
   1. In a browser, visit [http://localhost:4000](http://localhost:4000)
 
 To update the API docs:
