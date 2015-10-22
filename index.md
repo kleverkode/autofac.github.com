@@ -28,7 +28,7 @@ css: ['/css/home.min.css']
 var builder = new ContainerBuilder();
 
 // Register individual components
-builder.RegisterInstance(new TaskRepository)
+builder.RegisterInstance(new TaskRepository())
        .As&lt;ITaskRepository&gt;();
 builder.RegisterType&lt;TaskController&gt;();
 builder.Register(c =&gt; new LogManager(DateTime.Now))
