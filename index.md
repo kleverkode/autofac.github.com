@@ -10,10 +10,10 @@ css: ['/css/home.min.css']
 	<div class="container">
 		<img src="img/carousel-logo.png" alt="Autofac" />
 		<h1>Autofac</h1>
-		<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET 4.5, Silverlight 5, Windows Store apps, and Windows Phone 8 apps.</p>
+		<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.</p>
 		<p>
 			<a href="http://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
-			<a href="/scriptgen/" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
+			<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
 		</p>
 	</div>
 </header>
@@ -127,7 +127,7 @@ var container = builder.Build();
 			<div class="span4">
 				<img class="marketing-img" src="img/icon_arrow.png" alt="Download" width="128" height="128" />
 				<h2>Download</h2>
-				<p>The easiest way to get Autofac is through NuGet. We can <a href="/scriptgen/">generate a NuGet script for you</a> or you can <a href="https://nuget.org/packages?q=Author%3A%22Autofac+Contributors%22+Owner%3A%22alexmg%22+Autofac*">go through the NuGet Gallery</a>.</p>
+				<p>The easiest way to get Autofac is through NuGet. <a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*">Here are the Autofac packages in the NuGet Gallery</a>.</p>
 			</div>
 			<div class="span4">
 				<img class="marketing-img" src="img/icon_school.png" alt="Learn" width="128" height="128" />
