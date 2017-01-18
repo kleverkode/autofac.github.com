@@ -8,13 +8,15 @@ css: ['/css/home.min.css']
 -->
 <header class="jumbotron">
 	<div class="container">
-		<img src="img/carousel-logo.png" alt="Autofac" />
-		<h1>Autofac</h1>
-		<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.</p>
-		<p>
-			<a href="http://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
-			<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
-		</p>
+		<img class="character" src="img/autofac_web-banner_character.svg" />
+		<div class="copy-container">
+			<img class="logo-type" src="img/autofac_logo-type.svg" />
+			<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.</p>
+			<p>
+				<a href="http://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
+				<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
+			</p>
+		</div>
 	</div>
 </header>
 
