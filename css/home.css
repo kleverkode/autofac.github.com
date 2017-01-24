@@ -69,10 +69,12 @@ body > .navbar .brand:hover {
 }
 .jumbotron img.logo-type {
   height: 40px;
+  padding-bottom: 15px;
 }
 
 .copy-container {
   padding-left: 50px;
+  padding-top: 50px;
   width: 800px;
   float: left;
 }
@@ -155,6 +157,9 @@ body > .navbar .brand:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .copy-container {
+    width: 500px;
+  }
 }
 
 /* Tablet to desktop
@@ -168,6 +173,10 @@ body > .navbar .brand:hover {
   .jumbotron {
     margin-top: -20px; /* Offset bottom margin on .navbar */
   }
+  .copy-container {
+    width: 500px;
+  }
+
 }
 
 /* Tablet
@@ -187,6 +196,15 @@ body > .navbar .brand:hover {
   }
   .jumbotron img {
     max-height: 100px;
+  }
+  .copy-container {
+    width: 320px;
+  }
+  .jumbotron img.logo-type {
+    height: 60px;
+  }
+  .jumbotron img.character {
+    height: auto;
   }
   .marketing .span4 {
     margin-bottom: 40px;
