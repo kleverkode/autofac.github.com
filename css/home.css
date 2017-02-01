@@ -11,6 +11,7 @@
 body {
   position: relative;
   padding-top: 40px;
+  
 }
 
 /* Tweak navbar brand link to be super sleek
@@ -38,6 +39,10 @@ body > .navbar .brand:hover {
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
 }
 
+.navbar{
+  margin-bottom: 0!important;
+}
+
 /* Jumbotrons
 -------------------------------------------------- */
 
@@ -63,9 +68,16 @@ body > .navbar .brand:hover {
   line-height: 1.25;
   margin-bottom: 20px;
 }
+.character-wrap{
+    /* background: red; */
+    position: relative;
+    padding: 10px;
+    float: left;
+    margin-right: 2%;
+}
 .jumbotron img.character {
   height: 285px;
-  float: left;
+  /*float: left;*/
 }
 .jumbotron img.logo-type {
   height: 40px;
@@ -73,10 +85,11 @@ body > .navbar .brand:hover {
 }
 
 .copy-container {
-  padding-left: 50px;
-  padding-top: 50px;
-  width: 800px;
-  float: left;
+  /*padding-left: 50px;*/
+    padding-top: 50px;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    float: left;
 }
 
 /* Link styles */
@@ -147,6 +160,17 @@ body > .navbar .brand:hover {
 /* Responsive
 -------------------------------------------------- */
 
+/* Desktop and Up
+------------------------- */
+@media (min-width: 980px) {
+  .character-wrap{
+    width: 15% !important;
+  }
+  .copy-container {
+    width: 80% !important;
+  }
+}
+
 /* Desktop
 ------------------------- */
 @media (max-width: 980px) {
@@ -157,9 +181,9 @@ body > .navbar .brand:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .copy-container {
+  /*.copy-container {
     width: 500px;
-  }
+  }*/
 }
 
 /* Tablet to desktop
@@ -173,8 +197,11 @@ body > .navbar .brand:hover {
   .jumbotron {
     margin-top: -20px; /* Offset bottom margin on .navbar */
   }
+  .character-wrap{
+    width: 20% !important;
+  }
   .copy-container {
-    width: 500px;
+    width: 75% !important;
   }
 
 }
@@ -184,7 +211,11 @@ body > .navbar .brand:hover {
 @media (max-width: 767px) {
   /* Remove any padding from the body */
   body {
-    padding-top: 0;
+    padding: 0 !important;
+  }
+  .page-wrapper{
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   /* Widen masthead and social buttons to fill body padding */
@@ -194,17 +225,24 @@ body > .navbar .brand:hover {
     margin-right: -20px;
     margin-left:  -20px;
   }
-  .jumbotron img {
+  /*.jumbotron img {
     max-height: 100px;
-  }
+  }*/
+   
   .copy-container {
-    width: 320px;
+    /*width: 75% !important;*/
+    padding-top:20px;
   }
   .jumbotron img.logo-type {
     height: 60px;
+    margin: auto;
+    display: block;
   }
   .jumbotron img.character {
     height: auto;
+    width: 70%;
+    display: block;
+    margin: auto;
   }
   .marketing .span4 {
     margin-bottom: 40px;
@@ -249,11 +287,11 @@ body > .navbar .brand:hover {
   }
   .jumbotron .btn {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
   }
-  .jumbotron img {
+  /*.jumbotron img {
     max-height: 80px;
-  }
+  }*/
 
   /* Marketing on home */
   .marketing h1 {

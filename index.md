@@ -6,16 +6,26 @@ css: ['/css/home.min.css']
 <!--
 	Icons on home page are from Dellipack: http://www.iconfinder.com/iconsets/dellipack
 -->
+<div class="page-wrapper">
 <header class="jumbotron">
-	<div class="container">
-		<img class="character" src="img/autofac_web-banner_character.svg" />
-		<div class="copy-container">
-			<img class="logo-type" src="img/autofac_logo-type.svg" />
-			<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.</p>
-			<p>
-				<a href="http://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
-				<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
-			</p>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12 character-wrap">
+				<img class="character" src="img/autofac_web-banner_character.svg" />
+			</div>
+			<div class="span12 copy-container">
+				<div class="container-fluid">
+					<div class="row-fluid">
+					<img class="logo-type" src="img/autofac_logo-type.svg" />
+					<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.
+					</p>
+					<div class="action-buttons">
+						<a href="http://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
+						<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -143,4 +153,5 @@ var container = builder.Build();
 			</div>
 		</div>
 	</div>
+</div>
 </div>
